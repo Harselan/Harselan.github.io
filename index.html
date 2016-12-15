@@ -23,14 +23,39 @@
             <p class="Changertext">Här kan du hitta och diskutera en massa spel</p>
         </div>  
         <div class="leftcontent">
-        <div class="imges">   
-            <img class="mySlides" src="http://us.blizzard.com/static/_images/games/sc2/wallpapers/wall2/wall2-1024x768.jpg">
-            <img class="mySlides" src="https://content.pulse.ea.com/content/starwars-ea-com/en_US/starwars/battlefront/news-articles/get-a-first-glimpse-of-the-battle-of-jakku-in-star-wars-battlefr/_jcr_content/featuredImage.img.jpg">
-            <img class="mySlides" src="http://i0.kym-cdn.com/photos/images/original/001/046/405/82f.jpg">
-            <img class="mySlides" src="http://www.ensemblestudios.com/newsletters/04/WC_Wallpaper1_1600.jpg">
-            <a class= "leftbtn" onclick="plusDivs(-1)">&#10094;</a>
-            <a class="rightbtn" onclick="plusDivs(+1)">&#10095;</a>
-            </div>
+        <div class="">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+   <img class="img"src="http://i0.kym-cdn.com/photos/images/original/001/046/405/82f.jpg">
+  <div class="text">Spela spel</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="img"  src="http://us.blizzard.com/static/_images/games/sc2/wallpapers/wall2/wall2-1024x768.jpg">
+  <div class="text">Diskutera spel</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="img"  src="https://content.pulse.ea.com/content/starwars-ea-com/en_US/starwars/battlefront/news-articles/get-a-first-glimpse-of-the-battle-of-jakku-in-star-wars-battlefr/_jcr_content/featuredImage.img.jpg">
+  <div class="text">Hitta nya spel</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"> < </a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
             
         <div class="contentText">
         <p>
@@ -40,9 +65,7 @@
         </div>
         <div class="rightcontent">
         <div class="nyheter">
-           <ul> 
             
-           </ul> 
         <h1>Nyheter</h1>
             <ul>
                 <li><a href="#">Battlefield 1</a></li>
@@ -88,31 +111,31 @@
     </body>
     <script>
     
-        var slideIndex = 1;
-    showDivs(slideIndex);
+       var slideIndex = 1;
+showSlides(slideIndex);
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-white";
-    }  
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
     </script>
 </html>
