@@ -1,0 +1,149 @@
+*{
+    margin:0;   
+    padding:0; 
+}
+body{
+    background-color:#f2f2f2;
+}
+.wrapper{
+    width:100%;
+    max-width:900px;
+    height:1500px;
+    text-align: center;
+    margin:0 auto;
+    background-color:white;
+}
+.leftcontent{
+    width:70%;
+    float:left;
+    background-color:#d9d9d9;
+    border-radius:10px;
+}
+.rightcontent{
+    width:30%;
+    height:900px;
+    background-color:#e6e6e6;
+    float:right;
+    border-radius:10px;
+}
+.nyheter li, .popcat li{
+    list-style-type: none;
+}
+.header{
+    width:100%;
+    height:60px;
+}
+ h1, p{
+    font-family:fantasy;
+    color:blue;
+     transition: all 1s;
+     -webkit-transition: all 1s;
+}
+h1:hover, p:hover{
+    color:rgb(26, 83, 255);
+}
+.nav ul{
+    width:100%;
+    height:54px;
+    list-style-type: none;
+    padding:0;
+    overflow:hidden; 
+    background-color:blue; 
+    border-radius:2px;
+}
+.nav li{
+    width:20%;
+    float:left;  
+}
+.btn{
+    width:21%;
+    margin:0 auto;
+    margin-top:-8px;
+}
+.homebtn img{
+    width:100%;
+    min-width:35px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+/*.homebtn img:active{
+    transform: translate(0px,2px);
+    -webkit-transform: translate(0px, 2px);
+}*/
+li a{
+    display:block;
+    color:black;
+    text-align:center;
+    padding: 18px 16px;
+    text-decoration:none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+li a:hover {
+    background-color:rgb(26, 83, 255);
+    color:white;
+}
+.mySlides{
+    width:100%;
+    max-width:700px;
+    height:500px;
+    margin:0 auto;
+    margin-top:1%;
+}
+.leftbtn, .rightbtn{
+    background-color:blue;
+    color:black;
+    border:10px solid blue;
+    border-radius:20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.leftbtn:hover, .rightbtn:hover{
+    cursor:pointer;
+    color:white;
+    background-color:rgb(26, 83, 255);
+    border:10px solid rgb(26, 83, 255);
+}
+.leftbtn{
+    float:left;
+    display:inline-block;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.rightbtn{
+    float:right;
+    display:inline-block;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.imges{
+    width:98%;
+    max-width:700px;
+    margin:0 auto;
+}
+.mySlides{
+    display:inline-block;
+    width:100%
+}
+.contentText{
+    width:78%;
+    margin: 0 auto;
+    margin-top:30px;
+}
+.contentText p {
+    text-align: center;
+}
+.CommentText{
+    margin-top:20px;
+    width:90%;   
+    float:left;
+}
+.CommentText h2{
+    float:left;
+}
+.Submit{
+    float:right;
+}
+.Input{
+    margin:0 auto;
+}
