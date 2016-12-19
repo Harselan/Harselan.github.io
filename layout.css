@@ -8,7 +8,6 @@ body{
 .wrapper{
     width:100%;
     max-width:900px;
-    height:1500px;
     text-align: center;
     margin:0 auto;
     background-color:white;
@@ -25,6 +24,7 @@ body{
     float:right;
     border-radius:10px;
 }
+
 .nyheter li, .popcat li{
     list-style-type: none;
 }
@@ -61,15 +61,12 @@ h1:hover, p:hover{
 }
 .homebtn img{
     width:100%;
+    margin-left: -5px;
     min-width:35px;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
 }
-/*.homebtn img:active{
-    transform: translate(0px,2px);
-    -webkit-transform: translate(0px, 2px);
-}*/
-li a{
+li a, .Submit{
     display:block;
     color:black;
     text-align:center;
@@ -77,8 +74,9 @@ li a{
     text-decoration:none;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    border:none;
 }
-li a:hover {
+li a:hover, .Submit:hover {
     background-color:rgb(26, 83, 255);
     color:white;
 }
@@ -89,52 +87,27 @@ li a:hover {
     margin:0 auto;
     margin-top:1%;
 }
-.leftbtn, .rightbtn{
-    background-color:blue;
-    color:black;
-    border:10px solid blue;
-    border-radius:20px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.leftbtn:hover, .rightbtn:hover{
-    cursor:pointer;
-    color:white;
-    background-color:rgb(26, 83, 255);
-    border:10px solid rgb(26, 83, 255);
-}
-.leftbtn{
-    float:left;
-    display:inline-block;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-}
-.rightbtn{
-    float:right;
-    display:inline-block;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-}
 .imges{
     width:98%;
     max-width:700px;
     margin:0 auto;
 }
-.mySlides{
-    display:inline-block;
-    width:100%
-}
 .contentText{
-    width:78%;
-    margin: 0 auto;
-    margin-top:30px;
+    width:90%;
+    margin:0 auto;
+    padding:30px;
+    background-color:#e6e6e6;
+    border-radius:10px;
 }
 .contentText p {
     text-align: center;
+    font-size: 20px;
 }
 .CommentText{
-    margin-top:20px;
-    width:90%;   
+    margin-top:60px;
+    border-radius:10px;
+    background-color:#d9d9d9;
+    width:100%;   
     float:left;
 }
 .CommentText h2{
@@ -142,6 +115,9 @@ li a:hover {
 }
 .Submit{
     float:right;
+    background-color:#f2f2f2;
+    margin-right:1%;
+    margin-bottom:1%;
 }
 .Input{
     margin:0 auto;
@@ -154,9 +130,7 @@ li a:hover {
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -166,7 +140,6 @@ li a:hover {
   background-color:black;
   opacity:0.3;    
   top: 50%;
-  width: auto;
   padding: 16px;
   margin-top: -22px;
   color: white;
@@ -204,16 +177,6 @@ li a:hover {
   margin-left:1%;
   background-color:black;    
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
@@ -225,30 +188,36 @@ li a:hover {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
+/* Fading animation till bildspelet */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
 }
-
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.commentstexters{
+    width:100%;
+    max-width:900px;
+    text-align: center;
+    margin:0 auto;
+    background-color:white;
 }
