@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HarCom</title>
+        <link href="layout.css" rel="stylesheet" type="text/css"/>
+        <style>
+        
+        @media only screen and (max-width: 768px) {
+    .GameLister img{   
+        margin-top:8px;
+    margin-right:-20px;
+    margin-left:-8px;
+    height:80px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position:relative;
+    } 
+    .GameLister img:hover{
+        height:80px;
+        cursor:pointer;
+    }
+   .gameName:hover{
+        background-color:#cccccc;
+    }         
+}
+        
+        </style>
+    </head>
+    <body>
+    <div class="wrapper">   
+        <div class="nav">
+            <ul>
+            <li class="fpslist"><a  href="#">FPS spel</a></li>
+            <li class="rtslist"><a  href="rtsspel.html">RTS spel</a></li>
+            <li class="homebtn"><a class="btn blue" href="index.html"><img src="https://lh3.ggpht.com/A0x3jzuH1qRkE10HcTiT4qQr_6iAqVg-CTsoIqxnoIFyv92V91WI3KqiVlOvLtfoMRg=w300"></a></li>    
+            <li class="storlist"><a href="storyspel.html">Story spel</a></li>
+            <li class="andralist"><a href="racingspel.html">Racing spel</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            
+            <h1 class="Changertext">FPS Games</h1>
+            <p class="Changertext">First person shooter spel</p>
+        </div>  
+        
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img class="img"src="http://feed4gamers.com/imgs/2016-8-16-17-58-98/titanfall-2-beta-testing-begin-image-525.jpg">
+  <div class="text">Spela spel</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="https://assets.vg247.com/current//2016/05/star_wars_battlefront.jpg">
+  <div class="text">Diskutera spel</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="https://assets.vg247.com/current//2016/06/battlefield-1-concept-art-16.jpg">
+  <div class="text">Hitta nya spel</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        
+<div class="content">  
+    <table class="GameLister" cellspacing = "0">
+        <tr class="GameRowTop">
+        <td></td>
+        <td>Namn</td>
+        <td>Åldersgräns</td>
+        <td>Spelläge</td>
+        <td>Skapat(år)</td>    
+        </tr>
+        
+        <tr class="GameRow dark">
+            <td><img src="https://content.pulse.ea.com/content/starwars-ea-com/en_US/starwars/battlefront/news-articles/get-a-first-glimpse-of-the-battle-of-jakku-in-star-wars-battlefr/_jcr_content/featuredImage.img.jpg"></td>   
+            <td class="gameName"><a href="#" class="GameLink">Star Wars <br>Battlefront</a></td>
+        <td>16</td>
+        <td>Multiplayer</td>
+        <td>2015</td> 
+        </tr>
+        
+        <tr class="GameRow grey">
+        <td><img src="https://i.ytimg.com/vi/4pY3hlQEOc0/maxresdefault.jpg"></td>      
+            <td class="gameName"><a href="#" class="GameLink">Battlefield 1</a></td>
+        <td>18</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2016</td>  
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/2016/10/14/titanfall-2-release-date-price-gameplay-trailers-xbox-one-ps4-pc.jpg"></td>    
+            <td class="gameName"><a href="#" class="GameLink">Titanfall 2</a></td>
+        <td>16</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2016</td>    
+        </tr>
+        
+        <tr class="GameRow grey">
+        <td><img src="http://overwatch.blizzplanet.com/wp-content/uploads/2015/07/overwatch-team-during-first-cinematic.jpg"></td>     
+            <td class="gameName"><a href="#" class="GameLink">Overwatch</a></td>
+        <td>12</td>
+        <td>Multiplayer</td>
+        <td>2016</td>   
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="http://omnigamer.com/wp-content/uploads/2016/05/Doom.jpe"></td>
+            <td class="gameName"><a href="#" class="GameLink">Doom</a></td>
+        <td>18</td>
+        <td>Singleplayer</td>
+        <td>2016</td>    
+        </tr>
+    
+        <tr class="GameRow grey">
+        <td><img src="https://i.ytimg.com/vi/3mQOOvYrZdk/maxresdefault.jpg"></td>    
+            <td class="gameName"><a href="#" class="GameLink">Star Wars <br> Republic <br>Commando</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2005</td>    
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="http://static.trustedreviews.com/94/00003a9ac/40e7/infinite-warfare-2.jpg"></td>    
+        <td class="gameName"><a href="#" class="GameLink">Call Of Duty <br> Infinite <br>Warfare</a></td>
+        <td>18</td>
+        <td>Singleplayer</td>
+        <td>2016</td>    
+        </tr>
+        
+    </table>
+</div>    
+    
+    </div>
+        </body>
+        <script>
+    
+       var slideIndex = 0;
+        showSlides();
+
+/*            
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}*/
+            
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}            
+    </script>
+</html>
