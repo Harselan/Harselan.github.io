@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtual Games</title>
+        <link href="layout.css" rel="stylesheet" type="text/css"/>
+        <link href="phoneView.css" rel="stylesheet" media="media only screen and (max-width: 768px)"/>
+        <style>
+    @media only screen and (max-width: 768px) {
+    .dropdown{
+            width:100%;
+            display:block;
+            position:relative;
+            } 
+    .dropdown-content{
+    width:100%;
+    min-width:100px;
+    display: block;
+    position: relative;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+}        
+    .dropbtn{
+    color:;
+    padding: 5%;
+    font-size: 3vh;
+}
+        .leftcontent{
+            width:100%;
+        }
+        .img{
+            width:auto;
+            height:auto;
+            max-width:600px;
+            max-height:600px;
+        }
+        .rightcontent{
+            width:100%;
+            border-radius:0px;
+        }
+        .nyheter{
+            width:50%;
+            display:inline;
+            float:right;
+            border-radius:0px;
+        }
+        .popcat{
+            width:50%;
+            display:inline;
+            float:left;
+            border-radius:0px;
+        }
+        .CommentText{
+            margin-top:0px;
+            border-radius:0px;
+        }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+            <div class="dropdown-content" id="myDropdown">
+        <ul>
+            <li><a href="rtsspel.html"> Strategi</a></li>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="racingspel.html">Racing Spel</a></li>
+        </ul>
+        </div>
+        </div>
+    <div class="wrapper">   
+        
+        <div class="header">
+            
+            <h1 class="Changertext">virtual Games</h1>
+            <p class="Changertext">Här kan du hitta och diskutera en massa spel</p>
+        </div>        
+        </div>
+        <div class="wrapper">
+        <div class="leftcontent">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img class="img"src="http://i0.kym-cdn.com/photos/images/original/001/046/405/82f.jpg">
+  <div class="text">Spela spel</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="https://images3.alphacoders.com/968/96817.jpg">
+  <div class="text">Diskutera spel</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="https://content.pulse.ea.com/content/starwars-ea-com/en_US/starwars/battlefront/news-articles/get-a-first-glimpse-of-the-battle-of-jakku-in-star-wars-battlefr/_jcr_content/featuredImage.img.jpg">
+  <div class="text">Hitta nya spel</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div class="dot-container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+            
+        <div class="contentText">
+        <p>
+        En massa text om ingenting nyttigt som bara är där för att fylla ut sidan på ett väldigt oeffektivt och möjligen onödigt sätt... Men ja det är ju kul! Om man vill lägga till en massa andra saker att skriva och tala om. Som t.ex. att Oskar kallade sin MAC för bög och Rayan trodde att Oskar menade honom. Det gjorde Rayan ledsen och Ricardo sitter framför ett bord, skrattandes, medan han lyssnar på när Adam gör sitt omprov muntligt.
+        </p>
+        </div>
+        </div>
+        <div class="rightcontent">
+        <div class="nyheter">
+            
+        <h1>Nyheter</h1>
+            <ul>
+                <li class="dark"><a href="#">Battlefield 1</a></li>
+                <li class="grey"><a href="#">Titanfall 2</a></li>
+                <li class="dark"><a href="#">Civilization vi</a></li>
+                <li class="grey"><a href="#">overwatch</a></li>
+                <li class="dark"><a href="#">Doom</a></li>
+                <li class="grey"><a href="#">Firewatch</a></li>
+                <li class="dark"><a href="#">Lego Star Wars:<br> The Force Awakens</a></li>    
+            </ul>
+        </div>
+        <div class="popcat">
+        <h1>Populärt just<br> nu</h1>
+            <ul> 
+                <li class="dark"><a href="#">World of warcraft</a></li>
+                <li class="grey"><a href="#">Sims 4</a></li>
+                <li class="dark"><a href="#">Age of mythology</a></li>
+                <li class="grey"><a href="#">Star craft 2</a></li>
+                <li class="dark"><a href="#">Need for Speed: Most Wanted</a></li>
+                <li class="grey"><a href="#">Star Wars <br>Republic Commando</a></li>       
+            </ul>
+        </div>
+        </div>    
+        <div class="CommentText">
+        
+            <h1>vad tycker du om hemsidan?</h1>
+            <p>Skriv vad du tycker här!</p>
+            
+        <form action="" method="POST">
+            <label> <h1>Namn:</h1> 
+        <input type="text" name="Name" class="Input" style="width: 225px" required>
+       </label>
+       <br><br>
+            <label><h1>Kommentar:</h1>
+        <textarea name="Comment" class="Input" style="width: 300px" required></textarea>
+       </label>
+       <br><br>
+       <input type="submit" name="Submit" value="Skicka kommentar" class="Submit">
+
+        </form>
+        </div>
+        </div>      
+    </body>
+    <script>
+        
+       var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</html>

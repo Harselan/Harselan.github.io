@@ -1,0 +1,314 @@
+*{
+    margin:0;   
+    padding:0; 
+}
+@font-face{
+    font-family:Tesla;
+    src:url(fonts/TESLA.ttf);
+}
+@font-face{
+    font-family:Icons;
+    src:url(fonts/Icons South St.ttf);
+}
+@font-face{
+    font-family:Starjedi;
+    src: url(fonts/Starjedi.ttf);
+}
+body{
+    background-color:black;
+}
+.wrapper{
+    width:100%;
+    max-width:900px;
+    text-align: center;
+    margin:0 auto;
+    background-color:#ffdd1a;
+}
+.leftcontent{
+    width:70%;
+    float:left;
+    background-color:#ffd700;
+    border-radius:10px;
+    border:0.5px solid black;
+}
+.rightcontent{
+    width:29%;
+    background-color:#ffd700;
+    float:right;
+    border-radius:10px;
+}
+.content li{
+    list-style-type: none;
+}
+.content a{
+    text-align:left;
+    padding: 9px 8px;
+}
+.nyheter li, .popcat li{
+    list-style-type: none;
+}
+.header{
+    margin-bottom: 10px;
+    background-color:#e6c300;
+    border-radius:50px;
+    width:100%;
+}
+ h1, p, a{
+    font-family:Starjedi;
+    color:;
+     transition: all 1s;
+     -webkit-transition: all 1s;
+}
+.dropbtn{
+    background-color:#e6c300;
+    color:black;
+    padding: 5%;
+    width:100%;
+    min-width:100px;
+    font-size: 3vh;
+    border: none;
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
+}
+.dropdown{
+    width:10%;
+    display:inline;
+    background-color:;
+    position:fixed;
+    z-index: 1;
+}
+.dropdown-content{
+    width:120%;
+    min-width:120px;
+    background-color:#ffd700;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content li{
+    border-bottom: 0.5px solid black;
+}
+.show{
+    display:block;
+}
+li a, .Submit{
+    display:block;
+    color:black;
+    text-align:center;
+    padding: 18px 16px;
+    text-decoration:none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border:none;
+}
+li a:hover, .Submit:hover, .gameName:hover, .dropbtn:hover {
+    background-color:#ffe033;
+    color:#0d0d0d;
+    cursor:pointer;
+}
+.mySlides{
+    width:100%;
+    max-width:700px;
+    height:500px;
+    margin:0 auto;
+    margin-top:1%;
+}
+.imges{
+    width:98%;
+    max-width:700px;
+    margin:0 auto;
+}
+.contentText{
+    width:90%;
+    margin:0 auto;
+    padding:30px;
+    background-color:;
+    border-radius:10px;
+}
+.contentText p {
+    text-align: center;
+    font-size: 20px;
+}
+.CommentText{
+    margin-top:60px;
+    border-radius:10px;
+    background-color:#ffdd1a;
+    width:100%;   
+    float:left;
+}
+.CommentText h2{
+    float:left;
+}
+.Submit{
+    float:right;
+    background-color:#ccad00;
+    margin-right:1%;
+    margin-bottom:1%;
+}
+.Input{
+    margin:0 auto;
+}
+.img{   
+    width:98%;
+    height:500px;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  background-color:black;
+  opacity:0.3;    
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left:0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+    opacity:1;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+    width:10%;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  display:block; 
+  position:absolute;
+  width: 20%;
+  margin:0 auto;
+  margin-left:1%;
+  background-color:black;    
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-container{
+    margin-bottom: 10px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation till bildspelet */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
+}
+@keyframes fade {
+  from {
+      opacity: .4;
+    } 
+  to {
+      opacity: 1;
+    }
+}
+.commentstexters{
+    width:100%;
+    max-width:900px;
+    text-align: center;
+    margin:0 auto;
+    background-color:white;
+}
+.GameLister{
+    width:100%;
+    border-left:0.05em solid #8c8c8c;
+    border-right:0.05em solid #8c8c8c;
+    border-bottom:0.05em solid #8c8c8c;
+}
+.GameLister td{
+    background-color:#e6e6e6;
+    border-top:0.05em solid #8c8c8c;
+    height:120px;
+    font-family:arial;
+    font-weight: bold;
+}
+td a, .gameName{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    margin:0 auto;
+    font-size: 25px;
+    -webkit-transition: all 0.3s;
+    transition:all 0.3s;
+}
+.GameLister img{
+    margin-top:8px;
+    margin-right:-20px;
+    margin-left:-8px;
+    height:80px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+.GameLister img:hover{
+  cursor: pointer;
+    height:210px;
+}
+.GameRowTop td{
+    height:50px;
+    background-color:#e6c300;
+}
+.dark{
+    background-color:#ccad00;
+}
+.dark a{
+    color:#d9d9d9;
+}
+.dark td{
+    background-color:#ccad00;
+}
+.dark td a{
+    color:#d9d9d9;
+}
+.dark .gameName .GameLink:hover{
+    color:black;
+}
+.grey{
+    background-color:white;
+}
+.gameName{
+    width:150px;
+    -webkit-transition: all 0.3s;
+    transition:all 0.3s;
+}
+.phoneText{
+    display:none;
+}
+.compText{
+    display:grid;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RTS Spel</title>
+        <link href="layout.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body{
+        background-color:white;
+            }
+        @media only screen and (max-width: 768px) {
+            .header{
+                margin-top:20px;
+            }
+    .GameLister img{   
+      display:none;
+    } 
+    .GameLister img:hover{
+        height:80px;
+        cursor:pointer;
+    } 
+    .dropdown{
+        width:100%;
+        display:block;
+        background-color:white;
+        position:relative;
+    } 
+    .dropdown-content{
+    width:100%;
+    min-width:100px;
+    display: block;
+    position: relative;
+}        
+    .dropbtn{
+    color: white;
+    padding: 5%;
+    font-size: 3vh;
+}
+    .GameLister tr td{
+    display:none;
+     }
+    .GameLister tr .gameName{
+        display:block;     
+        width:100%;
+        height:40px;
+    } 
+            .GameLister tr .gameName .GameLink{
+                width:100%;
+                height:40px;
+            }
+            .compText{
+                display:none;
+            }
+            .phoneText{
+                display:inline;
+            }
+}
+        
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+            <div class="dropdown-content" id="myDropdown">
+        <ul>
+            <li><a href="rtsspel.html">strategi</a></li>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="racingspel.html">Racing Spel</a></li>
+        </ul>
+        </div>
+        </div>
+    <div class="wrapper">   
+        
+        <div class="header">
+            
+            <h1 class="Changertext">Strategi spel</h1>
+        </div>  
+        
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img class="img"src="http://torrentsgames.org/wp-content/uploads/2013/04/Age-of-Empires-III-PC.jpg">
+  <div class="text">Rädda världen</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="https://cdns.kinguin.net/media//category/e/n/enemy_protoss_encampment_on_kaldir-1024.jpg">
+  <div class="text">Styr krigen</div>
+</div>
+
+<div class="mySlides fade">
+  <img class="img"  src="http://www.geforce.com/sites/default/files-world/screenshots/age-of-mythology/screenshot2.jpg">
+  <div class="text">Led dina soldater</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        
+<div class="content">  
+    <table class="GameLister" cellspacing = "0">
+        <tr class="GameRowTop">
+        <td></td>
+        <td>Namn</td>
+        <td>Åldersgräns</td>
+        <td>Spelläge</td>
+        <td>Skapat(år)</td>    
+        </tr>
+        
+        <tr class="GameRow dark">
+            <td><img src="https://images.alphacoders.com/532/532304.jpg"></td>   
+            <td class="gameName"><a href="#" class="GameLink">Age of Empires i i i</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2005</td> 
+        </tr>
+        
+        <tr class="GameRow grey">
+        <td><img src="http://hdwallpaperia.com/wp-content/uploads/2013/12/Starcraft-2-Logo-Wallpaper.jpg"></td>      
+            <td class="gameName"><a href="#" class="GameLink">StarCraft 2</a></td>
+        <td>16</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2010</td>  
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="https://i.ytimg.com/vi/vagcTlstCyA/maxresdefault.jpg"></td>    
+            <td class="gameName"><a href="#" class="GameLink">Age of Mythology</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2002</td>    
+        </tr>
+        
+        <tr class="GameRow grey">
+        <td><img src="http://www.wallpapersxl.com/wallpapers/1920x1080/rome-2/2579536/rome-we-have-selected-the-best-total-war-ii-and-2579536.jpg"></td>     
+            <td class="gameName"><a href="#" class="GameLink">Total War: Rome i i</a></td>
+        <td>16</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2013</td>   
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="https://images5.alphacoders.com/367/367632.jpg"></td>
+            <td class="gameName"><a href="#" class="GameLink">Warcraft i i i</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2002</td>    
+        </tr>
+    
+        <tr class="GameRow grey">
+        <td><img src="https://i.ytimg.com/vi/wG2sLnR7CKA/maxresdefault.jpg"></td>    
+            <td class="gameName"><a href="#" class="GameLink compText">Battle of Middle Earth i i</a> <a href="#" class="GameLink phoneText">BoME2</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2006</td>    
+        </tr>
+        
+        <tr class="GameRow dark">
+        <td><img src="https://wallpaperscraft.com/image/rise_of_nations_thrones_and_patriots_rise_of_nations_strategy_game_big_huge_games_98757_1920x1080.jpg"></td>    
+        <td class="gameName"><a href="#" class="GameLink">Rise of Nations</a></td>
+        <td>12</td>
+        <td>Multiplayer/Singleplayer</td>
+        <td>2003</td>    
+        </tr>
+        
+    </table>
+</div>    
+    
+    </div>
+        </body>
+        <script>
+    
+       var slideIndex = 0;
+        showSlides();
+
+/*            
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}*/
+            
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}       
+            
+            function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</html>
