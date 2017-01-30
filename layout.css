@@ -1,95 +1,95 @@
-@media only screen and (max-width: 768px) {
-    .GameLister img{   
-        height:10px;
-    -webkit-transition:all 0s;
-    transition: all 0s;
-        display:none;
-    } 
-    .GameLister img:hover{
-        height:40px;
-        background-color:black;
-        cursor:pointer;
-    }
-}
 *{
     margin:0;   
     padding:0; 
 }
-body{
-    background-color:#f2f2f2;
+/* Importerar en ny font-family som jag kan använda i css: en*/
+@font-face{
+    font-family:Starjedi;
+    src: url(fonts/Starjedi.ttf);
 }
+body{
+    background-color:black;
+}
+/* innehåller allt utom kategori */
 .wrapper{
     width:100%;
-    max-width:900px;
+    max-width:1000px;
     text-align: center;
     margin:0 auto;
-    background-color:white;
+    background-color:#e67e22;
 }
+/* Delar upp sidan i två och innehåller sidans bildspel och beskrivande innehåll till området på vänster sida */
 .leftcontent{
     width:70%;
     float:left;
-    background-color:#d9d9d9;
+    background-color:#f39c12;
     border-radius:10px;
+    border:0.5px solid black;
 }
+/* Innehåller den högra delen av hemsidan och innehåller reklam och länkar till andra spel som finns */
 .rightcontent{
-    width:30%;
-    background-color:#e6e6e6;
+    width:29%;
+    background-color:#f39c12;
     float:right;
-    border-radius:10px;
+    border-radius:20px;
+    padding-bottom:5px;
 }
-.content{
-    width:100%;
-    margin:0 auto;
-}
-.content li{
-    list-style-type: none;
-}
+/* Namnen på spelen i kategorisidan */
 .content a{
     text-align:left;
     padding: 9px 8px;
 }
-.nyheter li, .popcat li{
+.nyheter li{
     list-style-type: none;
 }
 .header{
+    margin-bottom: 10px;
+    background-color:#ff9900;
     width:100%;
-    height:60px;
 }
- h1, p{
-    font-family:fantasy;
-    color:blue;
+/* De flesta texterna */
+ h1, p, a{
+     text-decoration: none;
+     color:black;
+    font-family:Starjedi;
      transition: all 1s;
      -webkit-transition: all 1s;
 }
-h1:hover, p:hover{
-    color:rgb(26, 83, 255);
-}
-.nav ul{
+/* Fixar kategoriknappen */
+.dropbtn{
+    background-color:#e67e22;
+    color:black;
+    padding: 5%;
     width:100%;
-    height:54px;
-    list-style-type: none;
-    padding:0;
-    overflow:hidden; 
-    background-color:#a6a6a6; 
-    border-radius:2px;
+    min-width:100px;
+    font-size: 3vh;
+    border: none;
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
 }
-.nav li{
-    width:20%;
-    float:left;  
+/* kategorin på datorverisionen */
+.dropdown{
+    width:10%;
+    display:inline;
+    position:fixed;
+    z-index: 1;
 }
-.btn{
-    width:21%;
-    margin:0 auto;
-    margin-top:-8px;
+/* Kategorierna som göms  */
+.dropdown-content{
+    width:120%;
+    min-width:120px;
+    background-color:#f1c40f;
+    display: none;
 }
-.homebtn img{
-    width:100%;
-    margin-left: -5px;
-    min-width:35px;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
+.dropdown-content li{
+    border-bottom: 0.5px solid black;
 }
-li a, .Submit{
+/* För dropdown content */
+.show{
+    display:block;
+}
+/* Visar hur spellänkarna ska se ut på hemsidan */
+li a, .Submit, .contentLink{
     display:block;
     color:black;
     text-align:center;
@@ -99,64 +99,50 @@ li a, .Submit{
     -webkit-transition: all 0.5s;
     border:none;
 }
-li a:hover, .Submit:hover, .gameName:hover {
-    background-color:rgb(26, 83, 255);
-    color:white;
+li a:hover, .Submit:hover, .dropbtn:hover, .contentLink:hover {
+    background-color:#f39c12;
+    color:#0d0d0d;
+    cursor:pointer;
 }
+.gameName:hover{
+    background-color:#cccccc;
+    color:#0d0d0d;
+    cursor:pointer;
+}
+/* Bildspel */
 .mySlides{
     width:100%;
     max-width:700px;
-    height:500px;
     margin:0 auto;
     margin-top:1%;
 }
-.imges{
-    width:98%;
-    max-width:700px;
-    margin:0 auto;
-}
+/* innehåller text och nedladdningsknapp */
 .contentText{
     width:90%;
     margin:0 auto;
     padding:30px;
-    background-color:#e6e6e6;
-    border-radius:10px;
 }
+/* innehållstexten */
 .contentText p {
     text-align: center;
     font-size: 20px;
 }
-.CommentText{
-    margin-top:60px;
-    border-radius:10px;
-    background-color:#d9d9d9;
-    width:100%;   
-    float:left;
+.contentText a{
+    margin-top:10px;
 }
-.CommentText h2{
-    float:left;
-}
-.Submit{
-    float:right;
-    background-color:#f2f2f2;
-    margin-right:1%;
-    margin-bottom:1%;
-}
-.Input{
+.contentLink{
+    width:30%;
     margin:0 auto;
+    margin-top: 30px;
+    background-color:white;
 }
-.img{
-    
+.img{   
     width:98%;
-    height:500px;
-    
 }
-/* Slideshow container */
 .slideshow-container {
   position: relative;
 }
-
-/* Next & previous buttons */
+/* knapparna */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -171,25 +157,23 @@ li a:hover, .Submit:hover, .gameName:hover {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
-/* Position the "next button" to the right */
+/* nästa knappen */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+/* "förra" knappen */
 .prev{
     left:0;
 }
-/* On hover, add a black background color with a little bit see-through */
+/* mus över "nästa" eller "förra" knappen */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
     opacity:1;
 }
-
-/* Caption text */
+/* Beskrivande text till bilderna */
 .text {
   color: #f2f2f2;
-    width:10%;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
@@ -200,7 +184,7 @@ li a:hover, .Submit:hover, .gameName:hover {
   margin-left:1%;
   background-color:black;    
 }
-/* The dots/bullets/indicators */
+/* Punkterna */
 .dot {
   cursor:pointer;
   height: 13px;
@@ -209,12 +193,16 @@ li a:hover, .Submit:hover, .gameName:hover {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: all 0.6s ease;
 }
+.dot-container{
+    margin-bottom: 10px;
+}
+/* Punkt mus över */
 .active, .dot:hover {
   background-color: #717171;
 }
-/* Fading animation till bildspelet */
+/* till bildspelet */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -237,6 +225,7 @@ li a:hover, .Submit:hover, .gameName:hover {
       opacity: 1;
     }
 }
+/* kommentarerna */
 .commentstexters{
     width:100%;
     max-width:900px;
@@ -244,28 +233,29 @@ li a:hover, .Submit:hover, .gameName:hover {
     margin:0 auto;
     background-color:white;
 }
+/* lista med spel */
 .GameLister{
     width:100%;
-    border-left:0.05em solid #8c8c8c;
-    border-right:0.05em solid #8c8c8c;
-    border-bottom:0.05em solid #8c8c8c;
 }
+/* varje spel i tabellen */
 .GameLister td{
     background-color:#e6e6e6;
     border-top:0.05em solid #8c8c8c;
     height:120px;
-    font-family:arial;
+    font-family:starJedi;
     font-weight: bold;
 }
-td a{
+/* namnen på spelen */
+td a, .gameName{
     text-decoration: none;
     color:black;
     text-align: center;
     margin:0 auto;
-    font-size: 25px;
+    font-size: 20px;
     -webkit-transition: all 0.3s;
     transition:all 0.3s;
 }
+/* spelbilderna */
 .GameLister img{
     margin-top:8px;
     margin-right:-20px;
@@ -274,19 +264,52 @@ td a{
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
 }
+/* bilden när man har musen över den */
 .GameLister img:hover{
   cursor: pointer;
     height:210px;
 }
+/* den översta delen av tabellen */
 .GameRowTop td{
     height:50px;
+    background-color:#e6c300;
 }
-.dark td{
-    background-color:#a6a6a6;
+/* spelraderna i dark och grey */
+.dark{
+    background-color:#ccad00;
+}
+.dark a{
     color:#d9d9d9;
 }
+.dark td{
+    background-color:#b3b3b3;
+}
+.dark td a{
+    color:#d9d9d9;
+}
+.dark .gameName .GameLink:hover{
+    color:black;
+}
+.grey{
+    background-color:white;
+}
+.news{
+    padding:40px;
+}
+.last{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* spelnamnens special */
 .gameName{
     width:150px;
     -webkit-transition: all 0.3s;
     transition:all 0.3s;
+}
+/* Dator eller mobil? */
+.phoneText{
+    display:none;
+}
+.compText{
+    display:grid;
 }

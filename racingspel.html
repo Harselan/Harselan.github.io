@@ -3,46 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HarCom</title>
+        <title>Racing spel</title>
         <link href="layout.css" rel="stylesheet" type="text/css"/>
-        <style>
-        
-        @media only screen and (max-width: 768px) {
-    .GameLister img{   
-        margin-top:8px;
-    margin-right:-20px;
-    margin-left:-8px;
-    height:80px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    position:relative;
-    } 
-    .GameLister img:hover{
-        height:80px;
-        cursor:pointer;
-    }
-   .gameName:hover{
-        background-color:#cccccc;
-    }         
-}
-        
-        </style>
+        <link href="catcss.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-    <div class="wrapper">   
-        <div class="nav">
-            <ul>
-            <li class="fpslist"><a  href="fpsspel.html">FPS spel</a></li>
-            <li class="rtslist"><a  href="rtsspel.html">RTS spel</a></li>
-            <li class="homebtn"><a class="btn blue" href="index.html"><img src="https://lh3.ggpht.com/A0x3jzuH1qRkE10HcTiT4qQr_6iAqVg-CTsoIqxnoIFyv92V91WI3KqiVlOvLtfoMRg=w300"></a></li>    
-            <li class="storlist"><a href="storyspel.html">Story spel</a></li>
-            <li class="andralist"><a href="#">Racing spel</a></li>
-            </ul>
+        <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+            <div class="dropdown-content" id="myDropdown">
+        <ul>
+            <li><a href="rtsspel.html">strategi</a></li>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="racingspel.html">Racing Spel</a></li>
+        </ul>
         </div>
+        </div>
+    <div class="wrapper">   
         <div class="header">
             
             <h1 class="Changertext">Racing Spel</h1>
-            <p class="Changertext">Kör en massa fordon</p>
         </div>  
         
 <div class="slideshow-container">
@@ -74,7 +54,7 @@
     <table class="GameLister" cellspacing = "0">
         <tr class="GameRowTop">
         <td></td>
-        <td>Namn</td>
+        <td class="gameName">Namn</td>
         <td>Åldersgräns</td>
         <td>Spelläge</td>
         <td>Skapat(år)</td>    
@@ -82,7 +62,7 @@
         
         <tr class="GameRow dark">
             <td><img src="http://wallpapercave.com/wp/Edvk6nR.jpg"></td>   
-            <td class="gameName"><a href="#" class="GameLink">NFS: Most Wanted</a></td>
+            <td class="gameName"><a href="nfsMW.html" class="GameLink">NFS: Most Wanted</a></td>
         <td>3</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2012</td> 
@@ -90,7 +70,7 @@
         
         <tr class="GameRow grey">
         <td><img src="https://s-media-cache-ak0.pinimg.com/originals/73/a9/02/73a902956c1a995256023367f4f39efa.jpg"></td>      
-            <td class="gameName"><a href="#" class="GameLink">The Crew</a></td>
+            <td class="gameName"><a href="TC.html" class="GameLink">The Crew</a></td>
         <td>12</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2014</td>  
@@ -98,7 +78,7 @@
         
         <tr class="GameRow dark">
         <td><img src="https://www.thenerdfilter.com/wp-content/uploads/2013/06/grid_2_game-wide.jpg"></td>    
-            <td class="gameName"><a href="#" class="GameLink">Grid 2</a></td>
+            <td class="gameName"><a href="Gr2.html" class="GameLink">Grid 2</a></td>
         <td>7</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2013</td>    
@@ -106,7 +86,7 @@
         
         <tr class="GameRow grey">
         <td><img src="http://ayay.co.uk/backgrounds/racing_games/need_for_speed_shift/logo.jpg"></td>     
-            <td class="gameName"><a href="#" class="GameLink">NFS: Shift</a></td>
+            <td class="gameName"><a href="nfsSH.html" class="GameLink">NFS: Shift</a></td>
         <td>7</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2009</td>   
@@ -114,7 +94,7 @@
         
         <tr class="GameRow dark">
         <td><img src="http://www.walldevil.com/wallpapers/a26/4527-wallpaper-logo.jpg"></td>
-            <td class="gameName"><a href="#" class="GameLink">Dirt 3</a></td>
+            <td class="gameName"><a href="D3.html" class="GameLink">Dirt 3</a></td>
         <td>12</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2011</td>    
@@ -122,7 +102,7 @@
     
         <tr class="GameRow grey">
         <td><img src="http://www.smashcustommusic.com/music/logos/43.png"></td>    
-            <td class="gameName"><a href="#" class="GameLink">Mario Kart Wii</a></td>
+            <td class="gameName"><a href="MkW.html" class="GameLink">Mario Kart Wii</a></td>
         <td>3</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2008</td>    
@@ -130,7 +110,7 @@
         
         <tr class="GameRow dark">
         <td><img src="http://cdn.pcwallart.com/images/mario-kart-double-dash-logo-wallpaper-3.jpg"></td>    
-        <td class="gameName"><a href="#" class="GameLink">Mario Kart: <br> Double Dash!!</a></td>
+        <td class="gameName"><a href="Mkdd.html" class="GameLink compText">Mario Kart: Double Dash!!</a><a href="Mkdd.html" class="GameLink phoneText">Mario Kart: DD!!</a></td>
         <td>3</td>
         <td>Singleplayer/Multiplayer</td>
         <td>2003</td>    
@@ -141,51 +121,6 @@
     
     </div>
         </body>
-        <script>
-    
-       var slideIndex = 0;
-        showSlides();
-
-/*            
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}*/
-            
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-}            
-    </script>
+        <script src='autoslideshow.js'></script>
+        <script src='dropdown.js'></script>
 </html>

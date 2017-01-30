@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D3</title>
+        <link href="layout.css" rel="stylesheet" type="text/css"/>
+        <link href="catcss.css" rel="stylesheet" type="text/css"/>
+        <link href="GameShow.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        
+        <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+            <div class="dropdown-content" id="myDropdown">
+                <ul>
+                    <li><a href="rtsspel.html"> Strategi</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="racingspel.html">Racing Spel</a></li>
+                </ul>
+            </div>
+            </div>
+        
+        <div class="wrapper">        
+           
+            <div class="header">
+            
+                <h1 class="Changertext">Dirt 3</h1>
+                <p class="Changertext">Kan du bli den bästa?</p>
+            </div>        
+            <div class="leftcontent">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img class="img"src="Bilder/D3/1792532-dirass.jpeg">
+                        <div class="text">Spela spel</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img"  src="Bilder/D3/OMB8Tt.jpg">
+                        <div class="text">Diskutera spel</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img"  src="Bilder/D3/wM3zQT.jpg">
+                        <div class="text">Hitta nya spel</div>
+                    </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                   <div class="dot-container" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                   </div>
+            
+                <div class="contentText">
+                    <p>
+                        Dirt 3 är ett racingspel som är utvecklat och publicerat av Codemasters för spelplattformerna window datorer, playstation 3 och xbox 360. Det är det åttonde spelet i Colin McRae Rally serien. 
+Dirt 3 handlar om att spelaren ska tjäna ihop ryktespoäng i flera olika tävlingar och utmaningar. Och när man får ryktespoäng blir donatorer intresserade och ger spelaren nya bilar och sådant. På flerspelarläget kan man spela många ”partyspellägen” som t.ex. capture the flag, zombie infection och smashing wooden targets. 
+
+                    </p>
+
+                <div class="contentLink">
+                    <a href="http://www.codemasters.com/game/dirt_3/">vill du ladda ner spelet tryck här!</a>
+                </div>
+            </div>
+        </div>      
+        </div>
+    </body>   
+    <script src='dropdown.js'></script>
+    <script src='manualslideshow.js'></script>   
+</html>

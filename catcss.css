@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    /* Ger lite avstånd mellan kategorierna och headern */
+    .header{
+        margin-top:20px;
+    }
+    /* ändrar höjden om man tar musen över bilden */
+    .GameLister img:hover{
+        height:80px;
+        cursor:pointer;
+    } 
+    .dropdown{
+        width:100%;
+        display:block;
+        background-color:white;
+        position:relative;
+    } 
+    .dropdown-content{
+    width:100%;
+    min-width:100px;
+    display: block;
+    position: relative;
+}        
+    .dropbtn{
+    color: white;
+    padding: 5%;
+    font-size: 3vh;
+}
+    .GameLister tr td{
+    display:none;
+     }
+    .GameLister tr .gameName{
+        display:block;     
+        width:100%;
+        height:40px;
+    } 
+     .GameLister tr .gameName .GameLink{
+        width:100%;
+        height:40px;
+    }
+    .compText{
+        display:none;
+    }
+    .phoneText{
+        display:inline;
+    }
+}
